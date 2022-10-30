@@ -1,0 +1,30 @@
+{
+  "name": "ikuzo-apple-app",
+  "version": "1.0.0",
+  "main": "web/index.js",
+  "license": "UNLICENSED",
+  "scripts": {
+    "shopify": "shopify",
+    "build": "shopify app build",
+    "dev": "npm run create-extension-js-bundle; shopify app dev",
+    "info": "shopify app info",
+    "generate": "shopify app generate",
+    "deploy": "shopify app deploy",
+    "create-extension-js-bundle": "npx webpack --config webpack.config.js"
+  },
+  "dependencies": {
+    "@ethersproject/providers": "^5.7.2",
+    "@shopify/app": "3.20.1",
+    "@shopify/cli": "3.20.1",
+    "@walletconnect/web3-provider": "^1.8.0",
+    "ethers": "^5.7.2",
+    "web3modal": "^1.9.9",
+    "webpack": "^4.44.1"
+  },
+  "author": "magikmea",
+  "devDependencies": {
+    "buffer": "^6.0.3",
+    "util": "^0.12.5",
+    "webpack-cli": "^4.10.0"
+  }
+}
